@@ -1,0 +1,17 @@
+body {
+  margin: 0 auto;
+}
+
+button,
+a {
+  border-radius: 3px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.45em;
+  cursor: pointer;
+}
+
+input {
+  border-radius: 3px;
+  padding: 5px 10px;
+}
