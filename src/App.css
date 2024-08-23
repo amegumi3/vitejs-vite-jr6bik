@@ -1,4 +1,6 @@
-body {
+html, body {
+  width: 100%;
+  text-align: center;
   margin: 0 auto;
 }
 
@@ -14,4 +16,17 @@ a {
 input {
   border-radius: 3px;
   padding: 5px 10px;
+}
+
+.react-pdf__Page__canvas {
+  margin: 0 auto;
+  width: 80% !important;
+  height: 100% !important;
+}
+
+.sc-elDIKY {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  text-align: center;
 }

@@ -1,9 +1,14 @@
 import './App.css';
 import { RouterProvider } from 'react-router-dom';
 import { BaseRouter } from './router/BaseRouter';
+import { InputInfoProvider } from './provider/InputInfoProvider';
 
 function App() {
-  return <RouterProvider router={BaseRouter} />;
+  return (
+    <InputInfoProvider>
+      <RouterProvider router={BaseRouter} />
+    </InputInfoProvider>
+  )
 }
 
 export default App;

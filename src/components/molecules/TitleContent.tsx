@@ -1,15 +1,17 @@
-import { memo, FC, ReactNode } from 'react';
-import styled from 'styled-components';
+import { memo, FC, ReactNode } from 'react'
+import styled from 'styled-components'
+import { Header } from '../atoms/layout/Header'
 
 type Props = {
-  title?: string;
-  children: ReactNode;
-};
+  title?: string
+  children: ReactNode
+}
 
 export const TitleContent: FC<Props> = memo((props) => {
   const { title = null, children } = props;
   return (
     <SContent>
+      <Header />
       {title && (
         <STitle>
           <h1>{title}</h1>
@@ -17,20 +19,20 @@ export const TitleContent: FC<Props> = memo((props) => {
       )}
       {children}
     </SContent>
-  );
-});
+  )
+})
 
 const SContent = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
   max-width: 800px;
   text-align: center;
-`;
+`
 
 const STitle = styled.div`
-  font-weight: 900;
   padding-top: 10px; 
   padding-bottom: 20px; 
-`;
+  font-weight: 900;
+`
